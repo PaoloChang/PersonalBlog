@@ -1,0 +1,223 @@
+header h1 {
+	margin-left: 40px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 35px;
+	border: 2px solid white;
+	background-color: white;
+}
+
+nav {
+	background-color: steelblue;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li { /* horizontal navigation bar  */
+	float: left;
+}
+
+nav a:link, nav a:visited {
+	display: block;
+	color: white;
+	background-color: steelblue;
+	text-align: center;
+	padding: 4px 20px;
+	text-decoration: none;
+	border-left: 1px inset #ecefec;
+	border-right: 1px inset #ecefec;
+}
+
+nav ul li ul { /* Second level menu hidden */
+	padding: 8px 12px; /*8, 12*/
+	position: absolute;
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s;
+}
+
+nav ul li:hover ul { /* Second level menu visible */
+	display: block;
+	padding: 0;
+	width: 150px;
+	opacity: 1;
+	visibility: visible;
+}
+
+nav ul li ul li { /* Second level menu line up */
+	display: block;
+	text-align: left;
+	width: 150px;
+
+}
+
+nav a:hover {
+	background-color: tomato;
+	/*color: #ffffff;*/
+}
+
+footer {
+	clear: both;
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+.entry-footer {
+	background-color: dimgray;
+	color: white;
+}
+
+/* "Home" page: index.html */
+
+.post-entry {
+	width: 100%;
+	margin: auto;
+}
+
+.left {
+	margin: 10px;
+	width: 15%;
+	float: left;
+}
+
+.left img {
+	width: 105%;
+}
+
+a .logo {
+	width: 20%;
+	height: auto;
+	
+}
+
+.entry-content {
+	float: left;
+	width: 70%;
+	background-color: lightgray;
+}
+
+article.home h2 {
+	background-color: burlywood;
+	border: 2px solid chocolate;
+	border-radius: 8px;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 10px 30px;
+}
+
+article p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+article.home p img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
+	height: auto;
+}
+
+.right {
+	font-size: 14px;
+}
+
+.right h3 {
+	font-weight: bold;
+}
+
+.right p {
+	margin-left: 10px;
+}
+
+.right p a {
+	font-size: 14px;
+	color: black;
+}
+
+.right p a:link {
+	text-decoration: none;
+}
+
+.right p a:hover {
+	color: chocolate;
+}
+
+p.toTheTop {
+	text-align: right;
+	padding: 10px;
+}
+
+p.toTheTop a {
+	color: black;
+	text-decoration: none;
+}
+
+p.toTheTop a:hover {
+	color: chocolate;
+}
+
+/* "About" page: about.html */
+
+article.oneLayoutArticle {
+	background-color: lightgray;
+}
+
+article h2, section h2, section h2 {
+	text-align: center;
+}
+
+/* "Resume" page: resume.html */
+
+article h4 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+aside #fastLink {
+	position: relative;
+	margin-left: 20px;
+}
+
+.logo {
+	width: 20%;
+	height: auto;
+}
+
+/* "Gallery" page: gallery.html */
+
+section.gallery {
+	background-color: lightgray;
+	overflow: auto;
+}
+
+div.gridImage {
+    margin: 2%;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gridImage:hover {
+    border: 1px solid #777;
+}
+
+div.gridImage img {
+	border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
